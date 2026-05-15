@@ -1,339 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Mother’s Day Mommy 💖</title>
-
+<title>Congratulations BSBA Admission 🎉</title>
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+  overflow-x: hidden;
+  color: #222;
 }
-
-body{
-background: linear-gradient(135deg,#ffdce8,#fff0f5,#ffe4ec);
-overflow-x:hidden;
-color:#5a2d3b;
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
 }
-
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-padding:20px;
-position:relative;
+h1 {
+  font-size: 3em;
+  color: #ff4081;
 }
-
-h1{
-font-size:4rem;
-color:#ff4f87;
-margin-bottom:20px;
-text-shadow:0 0 20px rgba(255,79,135,0.3);
+h2 {
+  color: #444;
 }
-
-.subtitle{
-font-size:1.3rem;
-max-width:800px;
-line-height:1.9;
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
-
-.btn{
-margin-top:35px;
-padding:16px 35px;
-border:none;
-border-radius:50px;
-background:#ff4f87;
-color:white;
-font-size:1rem;
-cursor:pointer;
-transition:0.3s;
-box-shadow:0 10px 25px rgba(255,79,135,0.3);
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-
-.btn:hover{
-transform:scale(1.05);
-background:#ff2f72;
+.heart {
+  font-size: 2rem;
+  animation: pulse 1s infinite;
+  color: red;
 }
-
-section{
-padding:90px 10%;
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
 }
-
-.card{
-background:rgba(255,255,255,0.7);
-backdrop-filter:blur(10px);
-padding:40px;
-border-radius:30px;
-margin-bottom:40px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-transition:0.3s;
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #ff4081;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 10px;
 }
-
-.card:hover{
-transform:translateY(-5px);
+.footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 0.9em;
+  color: #555;
 }
-
-h2{
-color:#ff4f87;
-margin-bottom:20px;
-font-size:2rem;
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: -10px;
+  animation: fall linear infinite;
 }
-
-p{
-line-height:2;
-font-size:1.1rem;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.box{
-height:240px;
-background:linear-gradient(135deg,#ffc6d8,#ffeaf1);
-border-radius:25px;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-font-weight:bold;
-font-size:1.1rem;
-color:#8d4d63;
-}
-
-footer{
-padding:60px 20px;
-text-align:center;
-background:rgba(255,255,255,0.6);
-font-size:1.3rem;
-color:#ff4f87;
-line-height:2;
-}
-
-.hearts{
-position:absolute;
-font-size:2rem;
-animation:float 8s linear infinite;
-opacity:0.7;
-}
-
-@keyframes float{
-0%{
-transform:translateY(100vh) scale(0.5);
-opacity:0;
-}
-30%{
-opacity:1;
-}
-100%{
-transform:translateY(-120vh) scale(1.2);
-opacity:0;
-}
-}
-
-@media(max-width:768px){
-h1{
-font-size:2.5rem;
-}
-
-.subtitle{
-font-size:1rem;
-}
-
-section{
-padding:70px 7%;
-}
+@keyframes fall {
+  to {transform: translateY(100vh) rotate(360deg);}
 }
 </style>
 </head>
-
-<body>
-
-<div class="hearts" style="left:10%; animation-delay:0s;">💖</div>
-<div class="hearts" style="left:30%; animation-delay:2s;">💕</div>
-<div class="hearts" style="left:50%; animation-delay:4s;">🌸</div>
-<div class="hearts" style="left:70%; animation-delay:1s;">💗</div>
-<div class="hearts" style="left:85%; animation-delay:3s;">💞</div>
-
-<header>
-
-<h1>Happy Mother’s Day Mommy 💖</h1>
-
-<p class="subtitle">
-To the sweetest, softest, most loving girl ever... thank you for loving me like no one else ever did.  
-You are not only my girlfriend, but also my comfort person, my safe place, my happiness, my peace, and my forever mommy 💐
-</p>
-
-<button class="btn" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
-Open My Heart 💌
-</button>
-
-</header>
-
-<section id="letter">
-
-<div class="card">
-<h2>My Precious Mommy 🥺</h2>
-
+<body><header>
+  <h1>🎉 CONGRATULATIONS CHELLY ROSE 🎉</h1>
+  <h2>To My Precious BSBA Future Star ✨</h2>
+  <p class="heart">❤️ YOU DID IT ❤️</p>
+  <p>With love from Alle Hassan 💖</p>
+</header><div class="container"><div class="card">
+<h2>💖 Dear Chelly Rose</h2>
 <p>
-Happy Mother’s Day to the girl who takes care of my heart every single day.  
-The way you remind me to eat, sleep properly, study well, and take care of myself makes me feel deeply loved.  
-
-Even when you’re tired, hurting, or busy, you still find ways to comfort me and make me smile.  
-That kind of love is rare and beautiful.  
-
-You became my peace during stressful days, my happiness during sad moments, and my comfort during overthinking nights.
+Congratulations on successfully passing your admission and stepping into Bachelor of Science in Business Administration (BSBA)! This is not just an achievement, this is the beginning of your bright future, your dreams, and your success story.
 </p>
-</div>
-
-<div class="card">
-<h2>You Changed My Life 🌸</h2>
-
 <p>
-Before you came into my life, everything felt normal.  
-But after meeting you, even the smallest moments became special.  
-
-Waking up to your messages, hearing your sweet words, seeing your pretty face, reading your “Iloveyouuuuuuuuuuuuverymuchhhhh,” and knowing someone loves me this deeply changed me completely.  
-
-You made my world softer.  
-You made my heart feel safe.  
-You made love feel beautiful.
+I want you to know how incredibly proud I am of you. Every step you took, every struggle you faced, every moment you didn’t give up led you here. You truly deserve this happiness.
 </p>
-</div>
-
-<div class="card">
-<h2>Everything I Love About You 💕</h2>
-
+</div><div class="card">
+<h2>🌸 I Am So Proud Of You</h2>
 <p>
-I love your caring heart.  
-I love your soft personality.  
-I love your clinginess.  
-I love your pretty smile.  
-I love your sleepy voice.  
-I love your bouquet photos.  
-I love how you always wait for me.  
-I love how you comfort me.  
-I love how you genuinely try your best for our relationship.  
-
-Honestly?  
-There are too many things to love about you.
+You worked hard, you believed in yourself, and today you proved that dedication always wins. I am beyond proud of you for reaching this milestone. You truly deserve all the happiness in the world.
 </p>
-</div>
-
-<div class="card">
-<h2>Thank You For Loving Me 💖</h2>
-
 <p>
-Thank you for every sweet good morning.  
-Thank you for every good night message.  
-Thank you for every kiss, every hug, every comfort, every reassurance, every “take care.”  
-
-Thank you for staying beside me.  
-Thank you for understanding me.  
-Thank you for making me feel appreciated and important.  
-
-Your love heals parts of me that nobody else could.
+From the beginning till now, your effort has never gone unnoticed. You are stronger and more capable than you think.
 </p>
-</div>
-
-<div class="card">
-<h2>Our Future Together ✨</h2>
-
+</div><div class="card">
+<h2>🎊 Celebration Time</h2>
 <p>
-I want more memories with you.  
-More late-night talks.  
-More cuddles.  
-More laughing together.  
-More comfort.  
-More monthsaries.  
-More matching energy.  
-More love.  
-
-I want us to continue growing together while loving each other gently and sincerely.  
-
-And no matter what happens, I want you to always remember this:  
-you are deeply loved by your pretty boy.
+Today is your day! Celebrate your success, smile proudly, and enjoy every moment. You are officially stepping into a new journey filled with growth, knowledge, and opportunities.
 </p>
-</div>
-
-<div class="card">
-<h2>Little Things About You That Melt My Heart 🥰</h2>
-
-<div class="gallery">
-
-<div class="box">Your sleepy morning messages ☀️</div>
-
-<div class="box">The way you say “bebiiiiiiii” 😭💖</div>
-
-<div class="box">Your pretty selfies 📸</div>
-
-<div class="box">Your bouquet pictures 🌸</div>
-
-<div class="box">How you tell me to take care 🥺</div>
-
-<div class="box">Your soft loving heart 💕</div>
-
-</div>
-</div>
-
-<div class="card">
-<h2>A Long Love Letter For My Mommy 💌</h2>
-
 <p>
-My love,  
-
-I hope you never forget how special you are to me.  
-
-You became one of the biggest blessings in my life, and every single day with you feels precious.  
-Even simple conversations with you make my heart happy.  
-
-Sometimes I just sit quietly and think about how lucky I am to be loved by someone as beautiful and caring as you.  
-
-You comfort me in ways words can’t explain.  
-You make me feel appreciated.  
-You make me feel safe.  
-You make me feel loved.  
-
-I love the way you care for me like I’m your whole world.  
-I love how you support me even during difficult days.  
-I love how you stay gentle with me.  
-
-You are my favorite notification.  
-My favorite person.  
-My favorite feeling.  
-
-And honestly?  
-If I could choose one place to stay forever, it would be beside your heart.  
-
-Happy Mother’s Day to my precious mommy 💖  
-Thank you for existing.  
-Thank you for loving me.  
-Thank you for choosing me.  
-
-Iloveyouuuuuuuuuuuuverymuchhhhh forever and ever 🥺💖
+Dance a little, smile a lot, and let yourself feel how amazing this achievement is. You earned every bit of it.
 </p>
-</div>
-
-</section>
-
-<footer>
-
-From your pretty boy 💌  
-To the most beautiful mommy ever 🌸  
-
-Iloveyouuuuuuuuuuuuverymuchhhhh 💖
-
-</footer>
-
-</body>
+<a class="button" href="#">Celebrate Your Success 💃</a>
+</div><div class="card">
+<h2>💌 A Special Message</h2>
+<p>
+Never forget how far you’ve come. This is just the beginning of something even bigger. Keep shining, keep growing, and always believe in yourself. I will always be here cheering for you.
+</p>
+<p>
+No matter where life takes you, remember that someone is always proud of you and silently rooting for your happiness and success.
+</p>
+</div><div class="card">
+<h2>💞 From Me To You</h2>
+<p>
+Chelly Rose, you are truly special. Not just for your achievement, but for the kind of heart you carry. I’m lucky to witness your journey and growth.
+</p>
+<p>
+With every success of yours, I find myself smiling a little more. Keep going, keep growing, and never stop believing in yourself.
+</p>
+</div></div><div class="footer">
+Made with love ❤️ for Chelly Rose by Alle Hassan
+</div><script>
+function createConfetti() {
+  const colors = ['#ff4081', '#ffeb3b', '#4caf50', '#2196f3', '#ff5722'];
+  for (let i = 0; i < 50; i++) {
+    let div = document.createElement('div');
+    div.classList.add('confetti');
+    document.body.appendChild(div);
+    div.style.left = Math.random() * 100 + 'vw';
+    div.style.background = colors[Math.floor(Math.random()*colors.length)];
+    div.style.animationDuration = (Math.random()*3 + 2) + 's';
+    div.style.opacity = Math.random();
+    div.style.width = div.style.height = Math.random()*8 + 5 + 'px';
+  }
+}
+createConfetti();
+</script></body>
 </html>
