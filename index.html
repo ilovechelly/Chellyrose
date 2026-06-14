@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -22,12 +22,13 @@ color:#333;
 overflow-x:hidden;
 }
 
+/* ✅ FIX ONLY: make hero fit screen properly */
 .hero{
 min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:50px;
+padding:40px 20px;
 text-align:center;
 background:
 linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)),
@@ -38,17 +39,21 @@ background-position:center;
 
 .hero-content{
 max-width:1100px;
+width:100%;
+padding:20px;
 }
 
 .hero h1{
-font-size:4rem;
+font-size:clamp(2rem, 5vw, 4rem);
 color:#ff4f8b;
 margin-bottom:25px;
+line-height:1.2;
 }
 
 .hero p{
-font-size:1.3rem;
+font-size:clamp(1rem, 2.5vw, 1.3rem);
 line-height:2;
+word-wrap:break-word;
 }
 
 .section{
@@ -116,19 +121,11 @@ font-weight:700;
 
 <p>
 
-To my precious Chelly Rose,
+Today is not just your first day of college.
 
-Today marks the beginning of a brand new chapter in your life.
+Today is the beginning of a brand new chapter of your life.
 
-Not just another Monday.
-
-Not just another school year.
-
-Not just another building.
-
-Today is the beginning of your college journey.
-
-A journey filled with opportunities, memories, growth, friendships, lessons, victories, and moments that will shape the wonderful future waiting for you.
+A chapter filled with opportunities, memories, growth, friendships, lessons, victories, and moments that will shape the wonderful future waiting for you.
 
 And before that journey begins...
 
